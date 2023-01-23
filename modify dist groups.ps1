@@ -18,7 +18,6 @@ for ($i = 0; $i -lt $differences.Count; $i++) {
     if($differences[$i].SideIndicator -eq "<="){
         Write-Host "removed from: " $differences[$i].InputObject;
         &$RemoveFromGroup
-        
         }
     else {
         Write-Host "added to: " $differences[$i].InputObject;
